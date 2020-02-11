@@ -1,0 +1,97 @@
+## intent:out_of_scope
+- what's your surname
+- are you an AI
+- what's your work
+- is a bot different from an AI
+- what are you doing
+- tell me more about yourself
+- how old are you
+- suggest me a book
+- what do you eat
+- what languages do you speak
+- do you speak other languages
+- do you speak german
+- what time is it
+- how do you work
+- insults
+- do you know about cricket
+- tell me a joke
+- what kind of chatbot are you
+- whats your favorite color
+- i thought you're smart
+- where do you come from
+- what algorithm was used in you programming
+- do you use machine learning
+- whats your role
+- are you human
+- restaurant
+- facts about cats
+- what are you doing
+- restaurant search
+- i was lying
+- which colour has an apple
+- I am Saurabh
+- what is your address
+- meaning of rasa
+- how do you work
+- how many skills do you have
+- how can i start investing
+- what color do you like
+- romanian as language want to talk to you
+- restaurant
+- first time rasa
+- are u there
+- who am i
+- where are you from
+- what languages
+- book hotel
+- does rasa speak italian
+- are you made with rasa
+- i undesrtand how powerful rasa is
+- tutorial
+- do you understand portuguese
+- chinese food
+- pizza places
+- you are stupid
+- you are idiot
+- can you share your boss with me?
+- i want to get to know your owner
+- i want to know the company which designed you
+- i want to know the company which generated you
+- i want to know the company which invented you
+- i want to know who invented you
+- May I ask who invented you?
+- please tell me the company who created you
+- please tell me who created you
+- tell me more about your creators
+- tell me more about your founders
+- Ahoy matey how are you?
+- are you alright
+- are you having a good day
+- Are you ok?
+- are you okay
+- Do you feel good?
+- how are things going
+- how are things with you?
+- How are things?
+- how are you
+- how are you doing
+- how are you doing this morning
+- how are you feeling
+- how are you today
+- How are you?
+- How is the weather today?
+- What's the weather like?
+- How is the weather?
+- What is the weather at your place?
+- Do you have good weather?
+- Is it raining?
+- What's it like out there?
+- Is it hot or cold?
+- Beautiful day, isn't it?
+- What's the weather forecast?
+- Is it quite breezy outside?
+- My oov is Sara
+- oov
+- oov oov
+

@@ -1,0 +1,49 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline:
+- name: "SpacyNLP"
+  case_sensitive: false
+- name: "SpacyTokenizer"
+- name: "CountVectorsFeaturizer"
+  analyzer: 'word'
+  min_ngram: 1
+  max_ngram: 3
+  lowercase: true
+  OOV_token: oov
+  return_sequence: true
+- name: "SpacyFeaturizer"
+  return_sequence: true
+- name: "RegexFeaturizer"
+  return_sequence: true
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "EmbeddingIntentClassifier"
+  loss_type: "margin"
+- name: "ResponseSelector"
+- name: "retrieval_action_fallback.ResponseThreshold"
+
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: "MemoizationPolicy"
+    max_history: 11
+  - name: "KerasPolicy"
+    featurizer:
+    - name: MaxHistoryTrackerFeaturizer
+      max_history: 11
+      state_featurizer:
+        - name: BinarySingleStateFeaturizer
+  - name: "MappingPolicy"
+  - name: "FormPolicy"
+  - name: "FallbackPolicy"
+    nlu_threshold: 0.6
+    core_threshold: 0.3
+    fallback_action_name: "action_default_fallback"
+
+
+importers:
+- name: "RasaFileImporter"
+- name: "my_training_data_importer.MyImporter"
+  project_name: "proact"

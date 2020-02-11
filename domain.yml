@@ -1,0 +1,350 @@
+intents:
+- greet:
+    use_entities: []
+- inform:
+    use_entities: []
+- out_of_scope:
+    triggers: action_utter_chitchat
+- get_costing:
+    triggers: action_get_costing
+- quit_po:
+    triggers: action_quit_po
+- abort_ywjvcnq:
+    triggers: action_abort
+- deny
+- affirm
+- get_dpr_status
+- get_dpr_with_order_id
+- mark_activity_close
+- close_activity_with_order_id
+- make_po
+- get_fg_status
+- get_fg_with_order_id
+entities:
+- id
+- info_type
+- activity_name
+- user_garment_text_description
+- thing_to_make
+- raw_vendor_name
+- po_item_type
+- po_type
+- po_activity
+- po_detail_type_raw_number
+- wish_to_continue
+- po_detail_type
+- po_item_or_activity_entity
+slots:
+  po_item_type:
+    type: text
+  po_item_or_activity_entity:
+    type: text
+  po_item_or_activity_entity_code:
+    type: text
+  po_item_type_code:
+    type: text
+  po_activity:
+    type: text
+  po_activity_code:
+    type: text
+  po_type:
+    type: text
+  po_type_code:
+    type: text
+  po_vendor_name:
+    type: text
+  po_vendor_name_code:
+    type: text
+  po_vendor_bill_address:
+    type: text
+  po_vendor_bill_address_code:
+    type: text
+  po_vendor_ship_address:
+    type: text
+  po_vendor_ship_address_code:
+    type: text
+  po_vendor_pay_terms:
+    type: text
+  po_vendor_pay_terms_code:
+    type: text
+  po_vendor_dispatch_mode:
+    type: text
+  po_vendor_dispatch_mode_code:
+    type: text
+  po_vendor_currency:
+    type: text
+  po_vendor_currency_code:
+    type: text
+  po_vendor_attribute_to_change:
+    type: text
+  po_vendor_attribute_value_to_change:
+    type: text
+  po_vendor_attribute_value_code_to_change:
+    type: text
+  po_detail_type:
+    type: text
+  po_detail_type_code:
+    type: text
+  po_detail_type_number_value:
+    type: text
+  po_detail_type_number_code:
+    type: text
+  final_po_id:
+    type: text
+  open_popup:
+    type: categorical
+    values:
+    - yes
+    - no
+  po_item_or_activity_entity_type:
+    type: categorical
+    values:
+      - item
+      - activity
+  enter_manually:
+    type: categorical
+    values:
+    - yes
+    - no
+  wish_to_continue:
+    type: categorical
+    values:
+    - yes
+    - no
+  change_po_detail_search_criteria:
+    type: categorical
+    values:
+    - yes
+    - no
+  po_process_initiated:
+    type: categorical
+    initial_value: 'no'
+    values:
+    - yes
+    - no
+  thing_to_make:
+    type: categorical
+    values:
+    - po
+  info_type:
+    type: categorical
+    values:
+    - po
+    - dpr
+    - fg status
+  activity_name:
+    type: text
+  has_multi_db_records:
+    type: categorical
+    initial_value: 'no'
+    values:
+    - yes
+    - no
+  id:
+    type: text
+  tna_activity_id:
+    type: text
+  requested_slot:
+    type: unfeaturized
+  company_name:
+    type: unfeaturized
+  project_name:
+    type: unfeaturized
+  user_name:
+    type: unfeaturized
+  user_email:
+    type: unfeaturized
+  user_id:
+    type: unfeaturized
+  api_host:
+    type: unfeaturized
+  ccid:
+    type: unfeaturized
+  cost_user:
+    type: unfeaturized
+  company_id:
+    type: unfeaturized
+  client_code:
+    type: unfeaturized
+  location_id:
+    type: unfeaturized
+  po_meta_data:
+    type: unfeaturized
+  raw_vendor_name:
+    type: unfeaturized
+  remarks:
+    type: unfeaturized
+  conversion_rate:
+    type: unfeaturized
+  po_detail_type_raw_number:
+    type: unfeaturized
+  selected_items:
+    type: unfeaturized
+  show_correct_item_activity_button_list:
+    type: categorical
+    values:
+    - yes
+    - no
+actions:
+- action_utter_ask_for_more_item_details
+- action_utter_image
+- action_validate_set_po_detail_type
+- action_validate_set_po_type
+- action_validate_set_item_type_or_activity
+- action_abort
+- action_list_top_three
+- action_fetch_fg_status_utter_result
+- action_get_fg_with_order_id
+- action_quit_po
+- action_save_po
+- action_get_item_details_popup_user
+- action_list_po_detail_type_number
+- action_list_po_detail_type
+- action_list_possible_currency_values
+- action_list_item_type_or_activity
+- action_update_po_vendor_attribute_value
+- action_list_possible_values
+- action_show_default_vendor_attribute_values
+- action_list_vendor_names
+- action_update_po_meta_data
+- action_ask_po_type
+- action_get_costing
+- action_fetch_dpr_status_utter_result
+- action_get_dpr_with_order_id
+- action_close_activity_with_order_id
+- action_mark_activity_close
+- action_default_fallback
+- action_restart
+- action_raise_ticket_silently
+- action_reset_all_slots
+- action_utter_chitchat
+- utter_default
+- utter_did_that_help
+- utter_for_fallback_inform
+- utter_glad_i_helped
+- utter_greet
+- utter_sorry_want_escalate
+- utter_what_else
+- utter_ask_fg_code
+- utter_ask_activity
+- utter_chitchat
+- utter_ask_wanna_change_default
+- utter_ask_what_to_change
+- utter_ask_wanna_change_more_or_continue
+- utter_ask_conversion_rate
+- utter_ask_po_detail_type_raw_number
+- utter_ask_for_currency_change
+templates:
+  utter_chitchat:
+  - text: 'Sorry, I''m still learning. I can''t help you with that currently.
+
+      '
+  utter_default:
+  - text: 'Sorry, I didn''t understand that. Please rephrase your question.
+
+      '
+  utter_did_that_help:
+  - buttons:
+      - payload: /affirm
+        title: 'Yes'
+      - payload: /deny
+        title: 'No'
+    text: 'Did that help you?
+
+      '
+  utter_for_fallback_inform:
+  - text: 'Sorry, I didn''t understand that. Please rephrase your question or Escalate
+      to support team.
+
+      '
+  utter_glad_i_helped:
+  - text: 'Glad I could help.
+
+    '
+  utter_greet:
+  - text: Hey {user_name}! How may I help you?
+  utter_sorry_want_escalate:
+  - buttons:
+      - payload: /affirm
+        title: 'Yes'
+      - payload: /deny
+        title: 'No'
+    text: Would you like to escalate this to **Support Team**?
+  utter_what_else:
+  - text: 'What can I do for you?
+
+      '
+  utter_ask_fg_code:
+  - text: "What is your **FG Code**?"
+  utter_ask_activity:
+  - text: "For which **activity**?"
+  utter_ask_raw_vendor_name:
+  - text: "Please enter the **Supplier Name** to whom you want to assign this {po_type}?"
+  utter_ask_wanna_change_default:
+  - buttons:
+      - payload: '/affirm'
+        title: 'Yes'
+      - payload: '/deny{"wish_to_continue": "yes"}'
+        title: 'No'
+    text: "Would you like to change any of the above values?"
+  utter_ask_what_to_change:
+  - buttons:
+      - payload: '/inform{"po_vendor_attribute_to_change": "BILL_ADDRESS_LIST"}'
+        title: 'Bill Address'
+      - payload: '/inform{"po_vendor_attribute_to_change": "SHIP_ADDRESS_LIST"}'
+        title: 'Ship Address'
+      - payload: '/inform{"po_vendor_attribute_to_change": "PAY_TERMS_LIST"}'
+        title: 'Pay Terms'
+      - payload: '/inform{"po_vendor_attribute_to_change": "DISPATCH_MODE_LIST"}'
+        title: 'Dispatch Mode'
+    text: "Please select the value that you want to change:"
+  utter_ask_wanna_change_more_or_continue:
+  - buttons:
+      - payload: '/inform{"wish_to_continue": "no", "po_vendor_attribute_to_change": "BILL_ADDRESS_LIST"}'
+        title: 'Bill Address'
+      - payload: '/inform{"wish_to_continue": "no", "po_vendor_attribute_to_change": "SHIP_ADDRESS_LIST"}'
+        title: 'Ship Address'
+      - payload: '/inform{"wish_to_continue": "no", "po_vendor_attribute_to_change": "PAY_TERMS_LIST"}'
+        title: 'Pay Terms'
+      - payload: '/inform{"wish_to_continue": "no", "po_vendor_attribute_to_change": "DISPATCH_MODE_LIST"}'
+        title: 'Dispatch Mode'
+      - payload: '/inform{"wish_to_continue": "yes"}'
+        title: 'CONTINUE'
+    text: "Please select an option if you want to change more, or, click on **CONTINUE** to continue:"
+  utter_ask_remarks:
+  - text: "Please enter remarks."
+  utter_ask_for_currency_change:
+  - buttons:
+      - payload: '/affirm'
+        title: 'Yes'
+      - payload: '/deny'
+        title: 'No'
+    text: "PO currency is {po_vendor_currency}. Would you like to change it?"
+  utter_ask_conversion_rate:
+  - text: "Please specify the conversion rate:"
+  utter_ask_po_detail_type_raw_number:
+  - text: "Please enter your {po_detail_type}:"
+  utter_popup:
+  - buttons:
+      - payload: '/affirm'
+        title: 'ITEM DETAILS'
+    text: "Please click on below link for item details:"
+  utter_ask_po_detail_search_criteria:
+  - buttons:
+      - payload: '/deny{"change_po_detail_search_criteria": "no"}'
+        title: 'Enter another number'
+      - payload: '/affirm{"change_po_detail_search_criteria": "yes"}'
+        title: 'Change search criteria'
+    text: "It seems that there is no items in our database for the selected number.  \nWould you like to change the search criteria or enter another {po_detail_type} number?"
+  utter_ask_for_more_item_details:
+  - buttons:
+      - payload: '/affirm'
+        title: 'Yes'
+      - payload: '/deny'
+        title: 'No'
+    text: "Would you like to add more item details?"
+forms:
+  - vendor_name_form
+  - remarks_form
+  - conversion_rate_form
+  - po_detail_type_raw_number_form

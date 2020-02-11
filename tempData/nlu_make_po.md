@@ -1,0 +1,84 @@
+## intent:make_po
+- make [po](thing_to_make)
+- make [purchase order](thing_to_make)
+- make [p.o.](thing_to_make)
+- kindly make [po](thing_to_make)
+- please make [po](thing_to_make)
+- would you make [po](thing_to_make)
+- could you make [po](thing_to_make)
+- make [po](thing_to_make)
+- kindly make [p.o.](thing_to_make)
+- please make [p.o.](thing_to_make)
+- would you make [p.o.](thing_to_make)
+- could you make [p.o.](thing_to_make)
+- make [p.o.](thing_to_make)
+- kindly make a [po](thing_to_make)
+- please make a [po](thing_to_make)
+- would you make a [po](thing_to_make)
+- could you make a [po](thing_to_make)
+- make a [po](thing_to_make)
+- kindly make [p.o](thing_to_make)
+- please make [p.o](thing_to_make)
+- would you make [p.o](thing_to_make)
+- could you make [p.o](thing_to_make)
+- make [p.o](thing_to_make)
+- kindly make [purchasing order](thing_to_make)
+- please make [purchasing order](thing_to_make)
+- would you make [purchasing order](thing_to_make)
+- could you make [purchasing order](thing_to_make)
+- make [purchasing order](thing_to_make)
+- kindly make [p o](thing_to_make)
+- please make [p o](thing_to_make)
+- would you make [p o](thing_to_make)
+- could you make [p o](thing_to_make)
+- make [p o](thing_to_make)
+- kindly write [po](thing_to_make)
+- please write [po](thing_to_make)
+- would you write [po](thing_to_make)
+- could you write [po](thing_to_make)
+- write [po](thing_to_make)
+- kindly write a [po](thing_to_make)
+- please write a [po](thing_to_make)
+- would you write a [po](thing_to_make)
+- could you write a [po](thing_to_make)
+- write a [po](thing_to_make)
+- kindly form a [po](thing_to_make)
+- please form a [po](thing_to_make)
+- would you form a [po](thing_to_make)
+- could you form a [po](thing_to_make)
+- form a [po](thing_to_make)
+- kindly build [po](thing_to_make)
+- please build [po](thing_to_make)
+- would you build [po](thing_to_make)
+- could you build [po](thing_to_make)
+- build [po](thing_to_make)
+- kindly construct a [po](thing_to_make)
+- please construct a [po](thing_to_make)
+- would you construct a [po](thing_to_make)
+- could you construct a [po](thing_to_make)
+- construct a [po](thing_to_make)
+- kindly construct [po](thing_to_make)
+- please construct [po](thing_to_make)
+- would you construct [po](thing_to_make)
+- could you construct [po](thing_to_make)
+- construct [po](thing_to_make)
+- make [p.o](thing_to_make)
+
+
+
+## synonym:po
+- p.o.
+- P.O.
+- PO
+- Po
+- P.o.
+- p.o
+- P.O
+- P.o
+- purchase order
+- Purchase Order
+- Purchase order
+- purchasing order
+
+## regex:id
+- [a-zA-Z0-9_/. -]+

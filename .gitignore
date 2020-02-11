@@ -1,0 +1,13 @@
+.idea/
+models/
+models_bluekaktus_-_manufacturing/
+models_bluekaktus_-_sourcing/
+models_proact/
+venv/
+__pycache__
+paraphraser/
+
+*.exe
+*.tar.gz
+*.log
+
