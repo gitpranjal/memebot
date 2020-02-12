@@ -10,6 +10,7 @@ from . import frontend_constants
 from . import message_constants
 import yagmail
 
+#pip3 install “python-socketio<4.3” “python-engineio<3.9” for resolving socket problem with webchat, which gives bit under training
 
 class ActionUtterChitchat(Action):
     """Revertible mapped action for chitchat"""
@@ -26,7 +27,7 @@ class ActionShowImage(Action):
     """action for image showing"""
 
     def name(self):
-        return "action_utter_image"
+        return "action_utter_meme"
 
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_image_url("https://www.dropbox.com/s/7cfheljdt87zbom/bot_image.jpg?raw=1")

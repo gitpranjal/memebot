@@ -1,8 +1,8 @@
 ## greet user
 * greet
     - utter_greet
-    - action_utter_image
-    - action_restart
+    - utter_meme_options
+    - action_utter_meme
 
 ## just affirm
 * affirm

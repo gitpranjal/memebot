@@ -13,6 +13,9 @@ intents:
     triggers: action_abort
 - deny
 - affirm
+- politics
+- programming
+- random_memes
 - get_dpr_status
 - get_dpr_with_order_id
 - mark_activity_close
@@ -34,7 +37,18 @@ entities:
 - wish_to_continue
 - po_detail_type
 - po_item_or_activity_entity
+- politics
+- programming
+- random_memes
+- beauties
 slots:
+  genre:
+    type: categorical
+    values:
+      - politics
+      - programming
+      - random_memes
+      - beauties
   po_item_type:
     type: text
   po_item_or_activity_entity:
@@ -187,7 +201,7 @@ slots:
     - no
 actions:
 - action_utter_ask_for_more_item_details
-- action_utter_image
+- action_utter_meme
 - action_validate_set_po_detail_type
 - action_validate_set_po_type
 - action_validate_set_item_type_or_activity
@@ -234,6 +248,7 @@ actions:
 - utter_ask_conversion_rate
 - utter_ask_po_detail_type_raw_number
 - utter_ask_for_currency_change
+- utter_meme_options
 templates:
   utter_chitchat:
   - text: 'Sorry, I''m still learning. I can''t help you with that currently.
@@ -270,6 +285,17 @@ templates:
       - payload: /deny
         title: 'No'
     text: Would you like to escalate this to **Support Team**?
+  utter_meme_options:
+    - buttons:
+        - payload: '/inform{"genre": "politics"}'
+          title: 'Politics'
+        - payload: '/inform{"genre": "programming"}'
+          title: 'Programming'
+        - payload: '/inform{"genre": "random_memes"}'
+          title: 'Random memes'
+        - payload: '/inform{"genre": "beauties"}'
+          title: 'Beauties'
+      text: What genre of memes you wanna be served?
   utter_what_else:
   - text: 'What can I do for you?
 
