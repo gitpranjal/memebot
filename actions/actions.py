@@ -8,6 +8,7 @@ from rasa_sdk.executor import CollectingDispatcher
 from .utils import Utils
 from . import frontend_constants
 from . import message_constants
+import random
 import yagmail
 
 #pip3 install “python-socketio<4.3” “python-engineio<3.9” for resolving socket problem with webchat, which gives bit under training
@@ -30,7 +31,29 @@ class ActionShowImage(Action):
         return "action_utter_meme"
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_image_url("https://www.dropbox.com/s/7cfheljdt87zbom/bot_image.jpg?raw=1")
+        politics = ["https://www.dropbox.com/s/gl5irprdfbtfouq/photo_2020-02-12_16-36-25.jpg?raw=1",
+                    "https://www.dropbox.com/s/dayzbbll4ppjxxr/photo_2020-02-12_16-36-51.jpg?raw=1",
+                    "https://www.dropbox.com/s/m14dqkevxnsyzh4/photo_2020-02-12_16-36-56.jpg?raw=1",
+                    "https://www.dropbox.com/s/w2joicvfofhg8fv/photo_2020-02-12_16-37-01.jpg?raw=1"]
+
+        programming = ["https://www.dropbox.com/s/9a67qicpo4puz6m/photo_2020-02-12_16-39-09.jpg?raw=1",
+                       "https://www.dropbox.com/s/2t0thy3ekupv470/photo_2020-02-12_16-39-15.jpg?raw=1",
+                       "https://www.dropbox.com/s/wlwmzbik70ipc2p/photo_2020-02-12_16-39-20.jpg?raw=1",
+                       "https://www.dropbox.com/s/zauwwhbgx7xnylk/photo_2020-02-13_12-28-07.jpg?raw=1"]
+
+        mixed =["https://www.dropbox.com/s/u6xazv3pjkjznsy/download.jpg?dl=0",
+                 "https://www.dropbox.com/s/xnrysju407fj1o0/photo_2020-02-13_12-28-16.jpg?raw=1",
+                 "https://www.dropbox.com/s/krdv5xhc3v71lxa/photo_2020-02-13_12-28-20.jpg?raw=1"]+politics+programming
+
+
+        genre = tracker.get_slot(("genre"))
+        if genre == "politics":
+            dispatcher.utter_image_url(random.choice(politics))
+        elif genre == "programming":
+            dispatcher.utter_image_url(random.choice(politics))
+        else:
+            dispatcher.utter_image_url(random.choice(mixed))
+
 
         return [FollowupAction('action_restart')]
 

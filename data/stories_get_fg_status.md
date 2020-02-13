@@ -3,6 +3,10 @@
     - utter_greet
     - utter_meme_options
     - action_utter_meme
+    - utter_ask_for_more_memes
+* deny
+	- utter_glad_i_helped
+	- action_restart
 
 ## just affirm
 * affirm

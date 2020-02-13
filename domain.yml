@@ -43,7 +43,7 @@ entities:
 - beauties
 slots:
   genre:
-    type: categorical
+    type: text
     values:
       - politics
       - programming
@@ -249,6 +249,7 @@ actions:
 - utter_ask_po_detail_type_raw_number
 - utter_ask_for_currency_change
 - utter_meme_options
+- utter_ask_for_more_memes
 templates:
   utter_chitchat:
   - text: 'Sorry, I''m still learning. I can''t help you with that currently.
@@ -265,6 +266,15 @@ templates:
       - payload: /deny
         title: 'No'
     text: 'Did that help you?
+
+      '
+  utter_ask_for_more_memes:
+  - buttons:
+      - payload: /affirm
+        title: 'Yes'
+      -payload: /deny
+        title: 'No'
+    text: 'Wanna see more memes!?
 
       '
   utter_for_fallback_inform:
