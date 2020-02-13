@@ -34,11 +34,7 @@ action_endpoint:
 tracker_store:
     type: mongod
     url: mongodb://localhost:27017
-    db: rasa
-    username: useradmin
-    password: Admin@DPSS1
-    auth_source: admin
-
+    db: admin
 
 # Event broker which all conversation events should be streamed to.
 # https://rasa.com/docs/rasa/api/event-brokers/
