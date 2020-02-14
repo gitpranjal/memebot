@@ -39,23 +39,67 @@ class ActionShowImage(Action):
         programming = ["https://www.dropbox.com/s/9a67qicpo4puz6m/photo_2020-02-12_16-39-09.jpg?raw=1",
                        "https://www.dropbox.com/s/2t0thy3ekupv470/photo_2020-02-12_16-39-15.jpg?raw=1",
                        "https://www.dropbox.com/s/wlwmzbik70ipc2p/photo_2020-02-12_16-39-20.jpg?raw=1",
-                       "https://www.dropbox.com/s/zauwwhbgx7xnylk/photo_2020-02-13_12-28-07.jpg?raw=1"]
+                       "https://www.dropbox.com/s/zauwwhbgx7xnylk/photo_2020-02-13_12-28-07.jpg?raw=1",
+                       "https://www.dropbox.com/s/d221iw557lkobk4/photo_2020-02-14_17-14-37.jpg?raw=1",
+                       "https://www.dropbox.com/s/d221iw557lkobk4/photo_2020-02-14_17-14-37.jpg?raw=1",
+                       "https://www.dropbox.com/s/2293r3sxnpuaydm/photo_2020-02-14_17-16-23.jpg?raw=1",
+                       "https://www.dropbox.com/s/s660hyhdjdpd4mx/photo_2020-02-14_17-17-42.jpg?raw=1",
+                       "https://www.dropbox.com/s/2249s01tflln8sd/photo_2020-02-14_17-17-47.jpg?raw=1",
+                       "https://www.dropbox.com/s/zqphqq8yxvv3pjn/photo_2020-02-14_17-18-18.jpg?raw=1",
+                       "https://www.dropbox.com/s/r6nrw8x51v3hdex/photo_2020-02-14_17-21-22.jpg?raw=1",
+                       "https://www.dropbox.com/s/aty6dpinqlhrcuw/photo_2020-02-14_17-21-29.jpg?raw=1",
+                       "https://www.dropbox.com/s/f75oeya9wo5jaai/photo_2020-02-14_17-21-49.jpg?raw=1",
+                       "https://www.dropbox.com/s/mkizt02rmqo0p8c/photo_2020-02-14_17-23-24.jpg?raw=1",
+                       "https://www.dropbox.com/s/pn1pdehcdvjew4r/photo_2020-02-14_17-23-42.jpg?raw=1"]
 
-        mixed =["https://www.dropbox.com/s/u6xazv3pjkjznsy/download.jpg?dl=0",
+        life_pholosophy=["https://www.dropbox.com/s/ujth80259w82ess/photo_2020-02-14_16-56-26.jpg?raw=1",
+                         "https://www.dropbox.com/s/hm47glvc6kqj54z/photo_2020-02-14_16-56-54.jpg?raw=1",
+                         "https://www.dropbox.com/s/7ipum76xfsvb4du/photo_2020-02-14_16-57-19.jpg?raw=1",
+                         "https://www.dropbox.com/s/g2wzvp4rleaqt2j/photo_2020-02-14_16-57-26.jpg?raw=1",
+                         "https://www.dropbox.com/s/g2wzvp4rleaqt2j/photo_2020-02-14_16-57-26.jpg?raw=1",
+                         "https://www.dropbox.com/s/cbj2k6c5fgbcnrr/photo_2020-02-14_16-58-16.jpg?raw=1",
+                         "https://www.dropbox.com/s/p221lisi8dv0j2q/photo_2020-02-14_16-58-28.jpg?raw=1",
+                          "https://www.dropbox.com/s/fdjita2ivxqla83/photo_2020-02-14_16-58-42.jpg?raw=1",
+                         "https://www.dropbox.com/s/ip1vxasrbm9uqaz/photo_2020-02-14_16-58-58.jpg?raw=1",
+                         "https://www.dropbox.com/s/a66jemav4qf6vnr/photo_2020-02-14_16-59-04.jpg?raw=1",
+                         "https://www.dropbox.com/s/dqbum4sfgm8hdqq/photo_2020-02-14_16-59-11.jpg?raw=1",
+                         "https://www.dropbox.com/s/l9643tuugizwbzk/photo_2020-02-14_16-59-23.jpg?raw=1",
+                         "https://www.dropbox.com/s/x9mp2424oauy2se/photo_2020-02-14_16-59-37.jpg?raw=1",
+                         "https://www.dropbox.com/s/kpzsn5pzc6ih421/photo_2020-02-14_17-00-26.jpg?raw=1",
+                         "https://www.dropbox.com/s/p7l16cvco0slc1v/photo_2020-02-14_17-00-37.jpg?raw=1",
+                         "https://www.dropbox.com/s/xehj00dp5o94k7n/photo_2020-02-14_17-00-42.jpg?raw=1",
+                         "https://www.dropbox.com/s/xxj3hcvyuxhjaky/photo_2020-02-14_17-00-50.jpg?raw=1",
+                         "https://www.dropbox.com/s/j5dvcyj8d3di5x3/photo_2020-02-14_17-00-54.jpg?raw=1",
+                         "https://www.dropbox.com/s/so5qj0g8f9dljus/photo_2020-02-14_17-01-04.jpg?raw=1",
+                         "https://www.dropbox.com/s/lezyzsd6m52km9g/photo_2020-02-14_17-01-12.jpg?raw=1"]
+
+
+        mixed =["https://www.dropbox.com/s/u6xazv3pjkjznsy/download.jpg?raw=1",
                  "https://www.dropbox.com/s/xnrysju407fj1o0/photo_2020-02-13_12-28-16.jpg?raw=1",
-                 "https://www.dropbox.com/s/krdv5xhc3v71lxa/photo_2020-02-13_12-28-20.jpg?raw=1"]+politics+programming
+                 "https://www.dropbox.com/s/krdv5xhc3v71lxa/photo_2020-02-13_12-28-20.jpg?raw=1"]
 
+        gandhi =["https://www.dropbox.com/s/kwe4u60p1lf2bmn/download.jpg?raw=1",
+                 "https://www.dropbox.com/s/cduja0bp4f8upps/images%20%281%29.jpg?raw=1",
+                 "https://www.dropbox.com/s/ocrxeylgcfszrpi/images%20%282%29.jpg?raw=1",
+                 "https://www.dropbox.com/s/rab4cn4yt1q2hw5/images.jpg?raw=1",
+                 "https://www.dropbox.com/s/2faqwug96g1cgyd/photo_2020-02-14_17-08-25.jpg?raw=1",
+                 "https://www.dropbox.com/s/0k3jxeuzqq8g7o0/photo_2020-02-14_17-08-41.jpg?raw=1",
+                 "https://www.dropbox.com/s/2rdpt9nya2bb9r3/photo_2020-02-14_17-08-48.jpg?raw=1"]
 
         genre = tracker.get_slot(("genre"))
         if genre == "politics":
             dispatcher.utter_image_url(random.choice(politics))
         elif genre == "programming":
-            dispatcher.utter_image_url(random.choice(politics))
-        else:
+            dispatcher.utter_image_url(random.choice(programming))
+        elif genre == "mixed":
             dispatcher.utter_image_url(random.choice(mixed))
+        elif genre=="gandhi":
+            dispatcher.utter_image_url(random.choice(gandhi))
+        else:
+            dispatcher.utter_image_url(random.choice(life_pholosophy))
 
 
-        return [FollowupAction('action_restart')]
+        return []
 
 class ActionAbort(Action):
     """Action for aborting any story and notifying user about it."""

@@ -391,14 +391,15 @@ templates:
   utter_meme_options:
     -
       buttons:
-        -
-          payload: "/inform{\"genre\": \"politics\"}"
+        - payload: "/inform{\"genre\": \"politics\"}"
           title: 'Politics'
-        -
-          payload: "/inform{\"genre\": \"programming\"}"
+        - payload: "/inform{\"genre\": \"programming\"}"
           title: 'Programming'
-        -
-          payload: "/inform{\"genre\": \"mixed\"}"
+        - payload: "/inform{\"genre\": \"gandhi\"}"
+          title: "Gandhi"
+        - payload: "/inform{\"genre\": \"life_and_philosophy\"}"
+          title: "Life and Philosophy"
+        - payload: "/inform{\"genre\": \"mixed\"}"
           title: "Mixed"
       text: "What genre of memes you wanna be served?"
   utter_popup:
